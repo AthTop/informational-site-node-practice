@@ -1,6 +1,5 @@
-import http from "node:http";
-import url from "node:url";
-import fs from "node:fs";
+const http = require("http");
+const fs = require("node:fs");
 
 http
   .createServer((req, res) => {
@@ -37,6 +36,6 @@ http
           res.write(data);
           res.end();
         });
-    } 
+    }
   })
-  .listen(8082);
+  .listen(8080);
